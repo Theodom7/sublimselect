@@ -1,0 +1,1133 @@
+```html
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sublim Select.Com | Emballages & Supports Haut de Gamme</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        prestige: {
+                            orange: '#D97706',      /* Orange foncé / Ambre de luxe */
+                            darkViolet: '#4C1D95',  /* Violet brun / Pourpre foncé */
+                            cyan: '#06B6D4',        /* Vert cyan lumineux */
+                            royalBlue: '#1D4ED8',   /* Bleu roi profond */
+                            crimson: '#9F1239',     /* Rouge pourpre / Rubis */
+                            darkBg: '#0F172A',      /* Fond sombre luxueux */
+                            cardBg: '#1E293B',      /* Fond de carte sombre */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4c1d95;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7c3aed;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #06B6D4 0%, #D97706 50%, #9F1239 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 30%, rgba(76, 29, 149, 0.4) 0%, rgba(15, 23, 42, 0.9) 70%);
+        }
+    </style>
+</head>
+<body class="bg-prestige-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-prestige-cyan selection:text-slate-900">
+
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-prestige-darkBg/90 border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <!-- Logo & Brand -->
+            <a href="#" class="flex items-center gap-4 group py-2">
+                <div class="relative flex items-center justify-center">
+                    <svg class="w-14 h-14 drop-shadow-lg group-hover:scale-105 transition-transform" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60 15L68 28L83 20L75 38H45L37 20L52 28L60 15Z" fill="url(#goldGradient)" stroke="#B45309" stroke-width="1.5"/>
+                        <circle cx="60" cy="12" r="2.5" fill="#FBBF24"/>
+                        <circle cx="37" cy="18" r="2" fill="#FBBF24"/>
+                        <circle cx="83" cy="18" r="2" fill="#FBBF24"/>
+                        <circle cx="28" cy="28" r="2" fill="#FBBF24"/>
+                        <circle cx="92" cy="28" r="2" fill="#FBBF24"/>
+                        <path d="M48 42C41 42 36 46 36 53C36 60 46 63 53 67C60 71 63 76 63 82C63 89 57 95 47 95C38 95 32 90 30 85L38 80C39 83 42 87 47 87C52 87 55 84 55 81C55 77 50 74 44 70C36 65 30 59 30 50C30 40 39 34 49 34C57 34 64 38 67 44L60 49C58 44 54 42 48 42Z" fill="url(#goldGradient)"/>
+                        <path d="M72 42C65 42 60 46 60 53C60 60 70 63 77 67C84 71 87 76 87 82C87 89 81 95 71 95C62 95 56 90 54 85L62 80C63 83 66 87 71 87C76 87 79 84 79 81C79 77 74 74 68 70C60 65 54 59 54 50C54 40 63 34 73 34C81 34 88 38 91 44L84 49C82 44 78 42 72 42Z" fill="url(#goldGradient)" opacity="0.9"/>
+                        <defs>
+                            <linearGradient id="goldGradient" x1="30" y1="12" x2="90" y2="95" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#FEF08A"/>
+                                <stop offset="50%" stop-color="#D97706"/>
+                                <stop offset="100%" stop-color="#B45309"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl sm:text-2xl font-extrabold tracking-wider text-white">SUBLIM <span class="text-amber-400">SELECT</span></span>
+                    <span class="text-[11px] font-bold tracking-widest text-slate-300">.COM</span>
+                    <span class="text-[9px] uppercase tracking-wider text-amber-500/90 font-medium">Élégance • Qualité • Confiance</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#accueil" class="hover:text-prestige-cyan transition-colors">Accueil</a>
+                <a href="#produits" class="hover:text-prestige-cyan transition-colors">Emballages</a>
+                <a href="#supports" class="hover:text-prestige-cyan transition-colors">Supports Com</a>
+                <a href="#apropos" class="hover:text-prestige-cyan transition-colors">L'Excellence</a>
+                <a href="#contact" class="hover:text-prestige-cyan transition-colors">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-4">
+                <button onclick="openAdminModal()" class="hidden sm:flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-amber-400 transition-all">
+                    <i class="fa-solid fa-lock text-xs"></i> Admin
+                </button>
+                <button onclick="toggleCart()" class="relative p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-slate-200 transition-all hover:scale-105 flex items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping text-prestige-cyan text-lg"></i>
+                    <span class="hidden sm:inline text-xs font-semibold">Panier</span>
+                    <span id="cart-badge" class="absolute -top-2 -right-2 bg-prestige-crimson text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md animate-pulse">0</span>
+                </button>
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-200">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-prestige-cardBg border-b border-slate-800 p-6 flex flex-col gap-4 shadow-2xl">
+            <a href="#accueil" onclick="toggleMobileMenu()" class="text-slate-200 hover:text-prestige-cyan py-2 border-b border-slate-800">Accueil</a>
+            <a href="#produits" onclick="toggleMobileMenu()" class="text-slate-200 hover:text-prestige-cyan py-2 border-b border-slate-800">Produits d'emballage</a>
+            <a href="#supports" onclick="toggleMobileMenu()" class="text-slate-200 hover:text-prestige-cyan py-2 border-b border-slate-800">Supports de Communication</a>
+            <a href="#apropos" onclick="toggleMobileMenu()" class="text-slate-200 hover:text-prestige-cyan py-2 border-b border-slate-800">L'Excellence</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="text-slate-200 hover:text-prestige-cyan py-2 border-b border-slate-800">Contact</a>
+            <button onclick="openAdminModal(); toggleMobileMenu();" class="text-amber-400 py-2 text-left font-bold flex items-center gap-2">
+                <i class="fa-solid fa-lock"></i> Interface Administrateur
+            </button>
+        </div>
+    </header>
+
+    <section id="accueil" class="relative hero-glow py-24 lg:py-32 overflow-hidden border-b border-slate-800/60">
+        <div class="absolute inset-0 opacity-25 bg-[radial-gradient(#1d4ed8_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-prestige-darkViolet/30 border border-prestige-darkViolet text-prestige-cyan text-xs font-semibold tracking-wide uppercase shadow-inner">
+                        <i class="fa-solid fa-crown text-prestige-orange"></i> Finition de Prestige & Luxe Visuel
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Sublimez Votre Marque avec nos <span class="gradient-text">Emballages & Supports</span> Haut de Gamme
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                        L'alliance parfaite entre le raffinement de l'emballage sur-mesure et l'impact visuel de supports de communication d'exception sur <span class="text-amber-400 font-semibold">sublimselect.com</span>.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#produits" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-prestige-royalBlue to-prestige-darkViolet hover:opacity-90 text-white font-semibold shadow-lg shadow-prestige-royalBlue/30 text-center transition-all hover:scale-105">
+                            Découvrir le Catalogue <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="https://wa.me/2250700000000?text=Bonjour,%20je%20souhaite%20discuter%20d'un%20projet%20sur%20Sublim%20Select.Com" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600/90 hover:bg-emerald-600 text-white font-semibold text-center transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/30">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Échanger avec un Commercial
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-prestige-cyan via-prestige-orange to-prestige-crimson opacity-30 blur-xl"></div>
+                        <div class="relative bg-prestige-cardBg border border-slate-700/80 rounded-2xl p-6 shadow-2xl space-y-6">
+                            <div class="flex items-center justify-between pb-4 border-b border-slate-700">
+                                <span class="text-sm font-bold text-white flex items-center gap-2">
+                                    <i class="fa-solid fa-star text-prestige-orange"></i> Sélection du Mois
+                                </span>
+                                <span class="text-xs px-2.5 py-1 rounded-md bg-prestige-crimson/20 text-prestige-crimson font-semibold">Exclusif</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 flex flex-col items-center text-center">
+                                    <div class="w-12 h-12 rounded-lg bg-prestige-royalBlue/20 text-prestige-cyan flex items-center justify-center text-xl mb-3">
+                                        <i class="fa-solid fa-box-open"></i>
+                                    </div>
+                                    <h3 class="font-bold text-sm text-white">Coffrets & Cartons</h3>
+                                    <p class="text-xs text-slate-400 mt-1">Finition dorée ou mate</p>
+                                </div>
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 flex flex-col items-center text-center">
+                                    <div class="w-12 h-12 rounded-lg bg-prestige-orange/20 text-prestige-orange flex items-center justify-center text-xl mb-3">
+                                        <i class="fa-solid fa-print"></i>
+                                    </div>
+                                    <h3 class="font-bold text-sm text-white">Kakimonos & Bâches</h3>
+                                    <p class="text-xs text-slate-400 mt-1">Impression HD éclatante</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-xl bg-gradient-to-r from-prestige-darkViolet/40 to-prestige-royalBlue/40 border border-prestige-darkViolet/50 flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full bg-prestige-cyan/20 text-prestige-cyan flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Qualité Garantie Prestige</h4>
+                                    <p class="text-xs text-slate-300">Des matériaux résistants et éco-responsables.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="produits" class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <h2 class="text-xs font-bold text-prestige-cyan uppercase tracking-widest mb-2"><i class="fa-solid fa-layer-group mr-2"></i>Notre Catalogue</h2>
+                    <p class="text-3xl font-extrabold text-white">Explorez Nos Collections</p>
+                </div>
+                <div class="flex flex-wrap gap-2 bg-prestige-cardBg p-1.5 rounded-xl border border-slate-800">
+                    <button onclick="filterProducts('all')" id="btn-all" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-prestige-royalBlue text-white shadow">Tout afficher</button>
+                    <button onclick="filterProducts('emballage')" id="btn-emballage" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all text-slate-300 hover:text-white">Produits d'Emballage</button>
+                    <button onclick="filterProducts('communication')" id="btn-communication" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all text-slate-300 hover:text-white">Supports de Communication</button>
+                </div>
+            </div>
+
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <section id="apropos" class="py-20 bg-slate-900/50 border-t border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-prestige-orange uppercase tracking-widest px-3 py-1 rounded-full bg-prestige-orange/10 border border-prestige-orange/20">L'Art de l'Excellence</span>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-white mt-4">Pourquoi Choisir Sublim Select.Com ?</h2>
+                <p class="text-slate-400 mt-3">Nous unissons les codes du luxe et de la rigueur professionnelle pour sublimer l'image de votre marque à travers chaque support.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-prestige-cardBg p-8 rounded-2xl border border-slate-800 hover:border-prestige-cyan/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-prestige-cyan/10 text-prestige-cyan flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Finitions de Prestige</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Impression haute définition, dorure à chaud, vernis sélectif et papiers texturés haut de gamme pour marquer les esprits.</p>
+                </div>
+                <div class="bg-prestige-cardBg p-8 rounded-2xl border border-slate-800 hover:border-prestige-orange/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-prestige-orange/10 text-prestige-orange flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Réactivité & Sur-Mesure</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Une équipe dédiée pour concevoir vos emballages et supports publicitaires exactement selon vos dimensions et chartes graphiques.</p>
+                </div>
+                <div class="bg-prestige-cardBg p-8 rounded-2xl border border-slate-800 hover:border-prestige-crimson/50 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-prestige-crimson/10 text-prestige-crimson flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Engagement Éco-Durable</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Des matériaux certifiés FSC, des encres végétales et des options entièrement recyclables pour allier prestige et responsabilité environnementale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="bg-gradient-to-br from-prestige-cardBg to-slate-900 border border-slate-800 rounded-3xl p-8 lg:p-12 shadow-2xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-xs font-bold text-prestige-cyan uppercase tracking-widest px-3 py-1 rounded-full bg-prestige-cyan/10 border border-prestige-cyan/20">Besoin d'un Conseil ?</span>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-white">Discutons de Votre Projet</h2>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Que vous ayez besoin de 500 boîtes personnalisées ou d'une campagne complète de supports de communication, notre équipe d'experts vous accompagne pas à pas.
+                </p>
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center shrink-0">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">WhatsApp Commercial (Admin)</p>
+                            <a href="https://wa.me/2250700000000?text=Bonjour,%20je%20souhaite%20préciser%20une%20commande%20sur%20Sublim%20Select.Com" target="_blank" class="text-sm font-bold text-emerald-400 hover:underline">+225 07 00 00 00 00 (Cliquer pour discuter)</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-prestige-orange/20 text-prestige-orange flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Courrier électronique</p>
+                            <p class="text-sm font-bold text-white">contact@sublimselect.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900/90 border border-slate-800 p-8 rounded-2xl space-y-4">
+                <h3 class="text-xl font-bold text-white mb-2">Envoyez-nous un Message</h3>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Votre Nom</label>
+                    <input type="text" id="inquiry-name" placeholder="Ex: Jean Kouassi" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-prestige-cyan">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Votre Téléphone / WhatsApp</label>
+                    <input type="text" id="inquiry-phone" placeholder="Ex: +225 05..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-prestige-cyan">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Votre Message ou Demande de Devis</label>
+                    <textarea id="inquiry-msg" rows="3" placeholder="Décrivez vos besoins en emballage ou support..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-prestige-cyan"></textarea>
+                </div>
+                <button onclick="submitInquiry()" class="w-full py-4 rounded-xl bg-gradient-to-r from-prestige-orange to-prestige-crimson text-white font-bold shadow-lg shadow-prestige-orange/20 hover:opacity-90 transition-all">
+                    Envoyer la Demande
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+        <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-prestige-cardBg border-l border-slate-800 shadow-2xl flex flex-col">
+                <div class="p-6 border-b border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-prestige-royalBlue/20 text-prestige-cyan flex items-center justify-center">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Votre Panier</h3>
+                            <p class="text-xs text-slate-400"><span id="cart-item-count">0</span> article(s) sélectionnés</p>
+                        </div>
+                    </div>
+                    <button onclick="toggleCart()" class="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+
+                <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4 divide-y divide-slate-800/60">
+                    <!-- Dynamic Cart Items -->
+                </div>
+
+                <div class="p-6 border-t border-slate-800 bg-slate-900/90 space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm text-slate-400">
+                            <span>Sous-total</span>
+                            <span id="cart-subtotal" class="font-semibold text-white">0 FCFA</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-slate-400">
+                            <span>Livraison & Finition</span>
+                            <span class="text-prestige-cyan font-semibold">Calculé au devis</span>
+                        </div>
+                        <div class="flex justify-between text-base font-bold text-white pt-2 border-t border-slate-800">
+                            <span>Total Estimé</span>
+                            <span id="cart-total" class="text-prestige-orange">0 FCFA</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-2">
+                        <input type="text" id="order-name" placeholder="Nom et Prénom *" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                        <input type="text" id="order-phone" placeholder="Numéro de Téléphone / WhatsApp *" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                        <input type="text" id="order-address" placeholder="Adresse de livraison (Ville, Quartier) *" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                        <textarea id="order-notes" rows="2" placeholder="Instructions particulières..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan"></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <button onclick="checkoutWhatsApp()" class="py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/30 transition-all">
+                            <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                        </button>
+                        <button onclick="checkoutDirect()" class="py-3 px-4 rounded-xl bg-gradient-to-r from-prestige-royalBlue to-prestige-darkViolet text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-prestige-royalBlue/30 transition-all">
+                            <i class="fa-solid fa-check"></i> Valider Commande
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="admin-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="absolute inset-0 bg-slate-950/85 backdrop-blur-md transition-opacity" onclick="closeAdminModal()"></div>
+        <div class="min-h-screen px-4 text-center flex items-center justify-center">
+            <div class="inline-block w-full max-w-4xl bg-prestige-cardBg border border-slate-700 rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all my-8 relative z-10">
+                
+                <!-- Admin Login Screen (Protected) -->
+                <div id="admin-login-screen" class="p-8 lg:p-12 max-w-md mx-auto text-center space-y-6">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mx-auto shadow-inner">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Espace Administrateur</h3>
+                        <p class="text-xs text-slate-400 mt-1">Veuillez entrer le mot de passe de sécurité pour accéder à la gestion de <span class="text-amber-400">sublimselect.com</span></p>
+                    </div>
+                    <div class="space-y-4 pt-2 text-left">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Mot de passe administrateur</label>
+                            <input type="password" id="admin-password-input" placeholder="Entrez le mot de passe..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400" onkeydown="if(event.key === 'Enter') verifyAdminPassword()">
+                        </div>
+                        <button onclick="verifyAdminPassword()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-700 text-slate-950 font-extrabold text-sm shadow-lg shadow-amber-900/30 hover:opacity-90 transition-all">
+                            Se Connecter à l'Administration
+                        </button>
+                    </div>
+                    <p class="text-[11px] text-slate-500">Mot de passe par défaut : <code class="text-amber-400 bg-slate-900 px-2 py-0.5 rounded">Sublim2026!</code></p>
+                </div>
+
+                <!-- Admin Dashboard Container (Hidden until authenticated) -->
+                <div id="admin-dashboard-container" class="hidden">
+                    <!-- Admin Header -->
+                    <div class="bg-slate-900 px-6 py-5 border-b border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Administration - Sublim Select.Com</h3>
+                                <p class="text-xs text-slate-400">Gérez vos emballages et supports publicitaires</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <button onclick="lockAdminSession()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold flex items-center gap-2">
+                                <i class="fa-solid fa-lock"></i> Verrouiller
+                            </button>
+                            <button onclick="closeAdminModal()" class="p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-xmark text-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Admin Body -->
+                    <div class="p-6 lg:p-8 space-y-8 max-h-[80vh] overflow-y-auto">
+                        <!-- Add / Edit Product Form -->
+                        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 space-y-4">
+                            <h4 id="form-title" class="text-base font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-plus-circle text-prestige-cyan"></i> Ajouter un Nouvel Article à la Vitrine
+                            </h4>
+                            <input type="hidden" id="edit-index" value="-1">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Nom du Produit *</label>
+                                    <input type="text" id="admin-name" placeholder="Ex: Sac Luxe Doré" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Catégorie *</label>
+                                    <select id="admin-category" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                                        <option value="emballage">Produits d'Emballage</option>
+                                        <option value="communication">Supports de Communication</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Prix (en FCFA) *</label>
+                                    <input type="number" id="admin-price" placeholder="Ex: 500" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Unité (Ex: l'unité, le m², lot de 100)</label>
+                                    <input type="text" id="admin-unit" placeholder="l'unité" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Lien de l'Image ou Icône FontAwesome (Ex: https://... ou fa-box)</label>
+                                    <input type="text" id="admin-image" placeholder="https://images.unsplash.com/... ou fa-box-open" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan">
+                                </div>
+                                <div class="md:col-span-2">
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1">Description Détaillée *</label>
+                                    <textarea id="admin-desc" rows="2" placeholder="Description qualitative de l'article..." class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-prestige-cyan"></textarea>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 pt-2">
+                                <button onclick="saveProduct()" class="px-6 py-3 rounded-xl bg-prestige-royalBlue hover:bg-blue-600 text-white font-bold text-xs shadow-lg shadow-blue-900/30 transition-all">
+                                    Enregistrer l'Article
+                                </button>
+                                <button onclick="resetAdminForm()" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs transition-all">
+                                    Réinitialiser
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Products List Table for Management -->
+                        <div class="space-y-4">
+                            <h4 class="text-base font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-list-check text-amber-400"></i> Liste des Articles Actuels de la Vitrine
+                            </h4>
+                            <div class="overflow-x-auto border border-slate-800 rounded-2xl bg-slate-900/50">
+                                <table class="w-full text-left text-xs text-slate-300">
+                                    <thead class="bg-slate-900 border-b border-slate-800 text-slate-400 uppercase">
+                                        <tr>
+                                            <th class="p-4">Article</th>
+                                            <th class="p-4">Catégorie</th>
+                                            <th class="p-4">Prix</th>
+                                            <th class="p-4 text-right">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admin-products-table" class="divide-y divide-slate-800">
+                                        <!-- Dynamic rows -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/2250700000000?text=Bonjour,%20je%20suis%20sur%20le%20site%20Sublim%20Select.Com%20et%20je%20souhaite%20des%20précisions%20sur%20une%20commande." target="_blank" class="fixed bottom-6 left-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center gap-3 transition-all hover:scale-110 group">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold">Discuter avec un commercial</span>
+    </a>
+
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-700 flex items-center justify-center text-white shadow-md">
+                        <i class="fa-solid fa-crown text-sm"></i>
+                    </div>
+                    <div>
+                        <span class="text-base font-bold text-white block">SUBLIM SELECT.COM</span>
+                        <span class="text-[10px] text-amber-400 uppercase tracking-widest">Élégance • Qualité • Confiance</span>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Fournisseur d'excellence en emballages haut de gamme et supports publicitaires percutants sur sublimselect.com.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4">Produits d'Emballage</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Sachets & Sacs Papier Luxe</a></li>
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Cartons & Coffrets Cadeaux</a></li>
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Enveloppes & Chemises</a></li>
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Bouteilles, Étuis & Bouchons</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4">Supports de Communication</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Flyers & Affiches HD</a></li>
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Cartes de Visite & Faire-parts</a></li>
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Bâches & Kakimonos Publicitaires</a></li>
+                    <li><a href="#produits" class="hover:text-prestige-cyan">Tableaux & Portraits Décoratifs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4">Administration</h4>
+                <p class="text-xs text-slate-400 mb-3">Accès réservé aux gestionnaires de la vitrine.</p>
+                <button onclick="openAdminModal()" class="w-full bg-slate-900 hover:bg-slate-800 border border-slate-800 text-amber-400 px-4 py-2.5 rounded-xl text-xs font-bold transition-colors flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lock text-xs"></i> Espace Administrateur
+                </button>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Sublim Select.Com (sublimselect.com). Tous droits réservés.</p>
+            <div class="flex gap-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-prestige-cyan">Mentions Légales</a>
+                <a href="#" class="hover:text-prestige-cyan">Politique de Confidentialité</a>
+                <a href="#" class="hover:text-prestige-cyan">Conditions Générales de Vente</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-slate-900 border border-prestige-cyan text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+            <i class="fa-solid fa-circle-check text-prestige-cyan text-lg"></i>
+            <span id="toast-message" class="text-sm font-medium">Action effectuée avec succès</span>
+        </div>
+    </div>
+
+    <script>
+        // Default Catalog Database
+        const defaultProducts = [
+            {
+                id: 1,
+                name: "Sacs Papier Luxe Pelliculé",
+                category: "emballage",
+                price: 350,
+                unit: "l'unité (par lot de 100)",
+                desc: "Sac en papier renforcé avec poignées en cordon coton et finitions dorées.",
+                image: "fa-bag-shopping",
+                badge: "Populaire",
+                badgeColor: "bg-prestige-orange/20 text-prestige-orange"
+            },
+            {
+                id: 2,
+                name: "Coffret Cadeau Rigide Aimanté",
+                category: "emballage",
+                price: 2500,
+                unit: "l'unité",
+                desc: "Coffret de luxe avec fermeture magnétique, idéal pour cosmétiques, montres ou spiritueux.",
+                image: "fa-box-open",
+                badge: "Prestige",
+                badgeColor: "bg-prestige-darkViolet/40 text-prestige-cyan"
+            },
+            {
+                id: 3,
+                name: "Cartons d'Expédition E-commerce",
+                category: "emballage",
+                price: 450,
+                unit: "l'unité",
+                desc: "Carton double cannelure résistant, personnalisable à l'effigie de votre marque.",
+                image: "fa-box",
+                badge: "Essentiel",
+                badgeColor: "bg-slate-800 text-slate-300"
+            },
+            {
+                id: 4,
+                name: "Sachets Zippés Métallisés / Kraft",
+                category: "emballage",
+                price: 75,
+                unit: "l'unité",
+                desc: "Parfait pour l'agroalimentaire, le café, les épices ou les accessoires de mode.",
+                image: "fa-envelope-open-text",
+                badge: "Nouveau",
+                badgeColor: "bg-prestige-crimson/20 text-prestige-crimson"
+            },
+            {
+                id: 5,
+                name: "Enveloppes & Chemises Dossiers",
+                category: "emballage",
+                price: 200,
+                unit: "l'unité",
+                desc: "Chemises cartonnées élégantes avec rabats et encoches pour cartes de visite.",
+                image: "fa-folder-open",
+                badge: "Pro",
+                badgeColor: "bg-prestige-royalBlue/20 text-prestige-cyan"
+            },
+            {
+                id: 6,
+                name: "Bouteilles Verre & Étuis sur-mesure",
+                category: "emballage",
+                price: 1800,
+                unit: "l'ensemble",
+                desc: "Bouteille en verre haut de gamme accompagnée de son étui cylindrique protecteur.",
+                image: "fa-wine-bottle",
+                badge: "Luxe",
+                badgeColor: "bg-prestige-darkViolet/40 text-prestige-cyan"
+            },
+            {
+                id: 7,
+                name: "Bouchons & Étiquettes de Sécurité",
+                category: "emballage",
+                price: 150,
+                unit: "l'unité",
+                desc: "Bouchons hermétiques et scellés inviolables personnalisables.",
+                image: "fa-wine-glass",
+                badge: "Standard",
+                badgeColor: "bg-slate-800 text-slate-300"
+            },
+            {
+                id: 8,
+                name: "Flyers & Prospectus HD",
+                category: "communication",
+                price: 35,
+                unit: "l'unité (min 500)",
+                desc: "Impression quadrichromie ultra-nette sur papier glacé ou mat 170g.",
+                image: "fa-file-lines",
+                badge: "Meilleure Vente",
+                badgeColor: "bg-prestige-orange/20 text-prestige-orange"
+            },
+            {
+                id: 9,
+                name: "Cartes de Visite de Prestige",
+                category: "communication",
+                price: 50,
+                unit: "l'unité (lot de 250)",
+                desc: "Cartes texturées avec gaufrage, vernis 3D sélectif ou dorure argent/or.",
+                image: "fa-address-card",
+                badge: "Prestige",
+                badgeColor: "bg-prestige-darkViolet/40 text-prestige-cyan"
+            },
+            {
+                id: 10,
+                name: "Affiches Publicitaires Grand Format",
+                category: "communication",
+                price: 5000,
+                unit: "l'unité",
+                desc: "Affiches haute résolution résistantes aux UV pour affichage intérieur ou extérieur.",
+                image: "fa-image",
+                badge: "Visibilité",
+                badgeColor: "bg-prestige-royalBlue/20 text-prestige-cyan"
+            },
+            {
+                id: 11,
+                name: "Kakimonos & Roll-up Publicitaires",
+                category: "communication",
+                price: 18000,
+                unit: "l'unité (avec structure)",
+                desc: "Enrouleur robuste avec structure en aluminium et bâche anti-incurvation.",
+                image: "fa-rectangle-vertical-history",
+                badge: "Événementiel",
+                badgeColor: "bg-prestige-crimson/20 text-prestige-crimson"
+            },
+            {
+                id: 12,
+                name: "Bâches Numériques & Banderoles",
+                category: "communication",
+                price: 12000,
+                unit: "le m²",
+                desc: "Bâche robuste ignifugée avec œillets métalliques renforcés pour façades.",
+                image: "fa-flag",
+                badge: "Grand Format",
+                badgeColor: "bg-prestige-royalBlue/20 text-prestige-cyan"
+            },
+            {
+                id: 13,
+                name: "Autocollants & Étiquettes Adhésives",
+                category: "communication",
+                price: 25,
+                unit: "l'unité",
+                desc: "Stickers en bobine ou à la planche, résistants à l'eau et aux rayures.",
+                image: "fa-note-sticky",
+                badge: "Pratique",
+                badgeColor: "bg-slate-800 text-slate-300"
+            },
+            {
+                id: 14,
+                name: "Portraits & Tableaux Décoratifs",
+                category: "communication",
+                price: 15000,
+                unit: "l'unité",
+                desc: "Impression sur toile canvas tendue sur châssis en bois pour bureaux ou salons.",
+                image: "fa-palette",
+                badge: "Déco & Luxe",
+                badgeColor: "bg-prestige-orange/20 text-prestige-orange"
+            },
+            {
+                id: 15,
+                name: "Faire-parts & Invitations de Luxe",
+                category: "communication",
+                price: 450,
+                unit: "l'unité",
+                desc: "Pour mariages, galas et cérémonies d'entreprise avec enveloppe assortie.",
+                image: "fa-envelope-open",
+                badge: "Cérémonie",
+                badgeColor: "bg-prestige-darkViolet/40 text-prestige-cyan"
+            }
+        ];
+
+        // Load products from localStorage or default
+        let products = JSON.parse(localStorage.getItem('sublim_products')) || defaultProducts;
+        let cart = [];
+
+        window.onload = function() {
+            renderProducts(products);
+            updateCartUI();
+        };
+
+        function saveProductsToStorage() {
+            localStorage.setItem('sublim_products', JSON.stringify(products));
+        }
+
+        // Filter Products Function
+        function filterProducts(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.className = "filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all text-slate-300 hover:text-white";
+            });
+            const activeBtn = document.getElementById(`btn-${category}`);
+            if(activeBtn) {
+                activeBtn.className = "filter-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all bg-prestige-royalBlue text-white shadow";
+            }
+
+            if(category === 'all') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === category);
+                renderProducts(filtered);
+            }
+        }
+
+        // Render Products Grid
+        function renderProducts(items) {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = '';
+
+            if(items.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-16 text-slate-500">
+                        <i class="fa-solid fa-box-open text-5xl mb-3 text-slate-700"></i>
+                        <p class="text-sm">Aucun article disponible dans cette catégorie.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            items.forEach(product => {
+                const card = document.createElement('div');
+                card.className = "bg-prestige-cardBg border border-slate-800 rounded-2xl p-5 flex flex-col justify-between hover:border-prestige-cyan/40 transition-all duration-300 group shadow-lg";
+                
+                // Check if image is URL or FontAwesome icon
+                let mediaHtml = '';
+                if(product.image && product.image.startsWith('http')) {
+                    mediaHtml = `<img src="${product.image}" alt="${product.name}" class="w-full h-36 object-cover rounded-xl mb-4 border border-slate-700" onerror="this.onerror=null; this.src='https://placehold.co/400x300/1e293b/06b6d4?text=Sublim+Select';">`;
+                } else {
+                    const iconClass = product.image && product.image.startsWith('fa-') ? product.image : 'fa-box-open';
+                    mediaHtml = `
+                        <div class="w-full h-36 rounded-xl bg-slate-900 border border-slate-700/80 text-prestige-cyan flex items-center justify-center text-4xl mb-4 group-hover:scale-105 transition-transform">
+                            <i class="fa-solid ${iconClass}"></i>
+                        </div>
+                    `;
+                }
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] px-2.5 py-1 rounded-full font-bold uppercase tracking-wider ${product.badgeColor || 'bg-slate-800 text-slate-300'}">${product.badge || 'Vitrine'}</span>
+                        </div>
+                        ${mediaHtml}
+                        <h3 class="font-bold text-base text-white group-hover:text-prestige-cyan transition-colors">${product.name}</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed line-clamp-2">${product.desc}</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center justify-between">
+                        <div>
+                            <span class="text-lg font-extrabold text-white">${Number(product.price).toLocaleString()} FCFA</span>
+                            <span class="text-[10px] text-slate-500 block">${product.unit || 'l\'unité'}</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <a href="https://wa.me/2250700000000?text=Bonjour,%20je%20souhaite%20des%20précisions%20sur%20l'article:%20${encodeURIComponent(product.name)}" target="_blank" class="p-2.5 rounded-xl bg-slate-800 hover:bg-emerald-600 text-slate-300 hover:text-white transition-all text-xs" title="Préciser par WhatsApp">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                            </a>
+                            <button onclick="addToCart(${product.id})" class="p-2.5 rounded-xl bg-slate-800 hover:bg-prestige-royalBlue text-white text-xs font-bold transition-all flex items-center gap-1 shadow hover:shadow-lg">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Admin Modal Functions
+        const ADMIN_PASSWORD = "Sublim2026!";
+        let isAdminAuthenticated = false;
+
+        function openAdminModal() {
+            document.getElementById('admin-modal').classList.remove('hidden');
+            if(isAdminAuthenticated) {
+                document.getElementById('admin-login-screen').classList.add('hidden');
+                document.getElementById('admin-dashboard-container').classList.remove('hidden');
+                renderAdminTable();
+            } else {
+                document.getElementById('admin-login-screen').classList.remove('hidden');
+                document.getElementById('admin-dashboard-container').classList.add('hidden');
+                document.getElementById('admin-password-input').value = '';
+            }
+        }
+
+        function verifyAdminPassword() {
+            const pwd = document.getElementById('admin-password-input').value;
+            if(pwd === ADMIN_PASSWORD) {
+                isAdminAuthenticated = true;
+                document.getElementById('admin-login-screen').classList.add('hidden');
+                document.getElementById('admin-dashboard-container').classList.remove('hidden');
+                renderAdminTable();
+                showToast("Accès administrateur autorisé.");
+            } else {
+                showToast("Mot de passe incorrect.");
+            }
+        }
+
+        function lockAdminSession() {
+            isAdminAuthenticated = false;
+            document.getElementById('admin-dashboard-container').classList.add('hidden');
+            document.getElementById('admin-login-screen').classList.remove('hidden');
+            document.getElementById('admin-password-input').value = '';
+            showToast("Session administrateur verrouillée.");
+        }
+
+        function closeAdminModal() {
+            document.getElementById('admin-modal').classList.add('hidden');
+            resetAdminForm();
+            renderProducts(products);
+        }
+
+        function renderAdminTable() {
+            const tbody = document.getElementById('admin-products-table');
+            tbody.innerHTML = '';
+
+            products.forEach((p, index) => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-800/40 transition-colors";
+                tr.innerHTML = `
+                    <td class="p-4 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded bg-slate-800 flex items-center justify-center text-prestige-cyan shrink-0">
+                            <i class="fa-solid ${p.image && p.image.startsWith('fa-') ? p.image : 'fa-box'}"></i>
+                        </div>
+                        <div>
+                            <span class="font-bold text-white block">${p.name}</span>
+                            <span class="text-[10px] text-slate-400 line-clamp-1">${p.desc}</span>
+                        </div>
+                    </td>
+                    <td class="p-4 uppercase text-[10px] font-semibold text-amber-400">${p.category}</td>
+                    <td class="p-4 font-bold text-white">${Number(p.price).toLocaleString()} FCFA</td>
+                    <td class="p-4 text-right space-x-2">
+                        <button onclick="editProduct(${index})" class="px-2.5 py-1 rounded-lg bg-blue-600/20 text-blue-400 hover:bg-blue-600 hover:text-white transition-colors">Modifier</button>
+                        <button onclick="deleteProduct(${index})" class="px-2.5 py-1 rounded-lg bg-red-600/20 text-red-400 hover:bg-red-600 hover:text-white transition-colors">Supprimer</button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function saveProduct() {
+            const index = parseInt(document.getElementById('edit-index').value);
+            const name = document.getElementById('admin-name').value.trim();
+            const category = document.getElementById('admin-category').value;
+            const price = parseFloat(document.getElementById('admin-price').value);
+            const unit = document.getElementById('admin-unit').value.trim() || "l'unité";
+            const image = document.getElementById('admin-image').value.trim() || "fa-box-open";
+            const desc = document.getElementById('admin-desc').value.trim();
+
+            if(!name || isNaN(price) || !desc) {
+                showToast("Veuillez remplir les champs obligatoires (Nom, Prix, Description).");
+                return;
+            }
+
+            const newProduct = {
+                id: index >= 0 ? products[index].id : Date.now(),
+                name,
+                category,
+                price,
+                unit,
+                image,
+                desc,
+                badge: category === 'emballage' ? 'Emballage' : 'Communication',
+                badgeColor: category === 'emballage' ? 'bg-prestige-orange/20 text-prestige-orange' : 'bg-prestige-royalBlue/20 text-prestige-cyan'
+            };
+
+            if(index >= 0) {
+                products[index] = newProduct;
+                showToast("Article mis à jour avec succès !");
+            } else {
+                products.push(newProduct);
+                showToast("Nouvel article ajouté à la vitrine !");
+            }
+
+            saveProductsToStorage();
+            resetAdminForm();
+            renderAdminTable();
+        }
+
+        function editProduct(index) {
+            const p = products[index];
+            document.getElementById('edit-index').value = index;
+            document.getElementById('admin-name').value = p.name;
+            document.getElementById('admin-category').value = p.category;
+            document.getElementById('admin-price').value = p.price;
+            document.getElementById('admin-unit').value = p.unit;
+            document.getElementById('admin-image').value = p.image;
+            document.getElementById('admin-desc').value = p.desc;
+            document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-pen-to-square text-prestige-orange"></i> Modifier l'Article #${index + 1}`;
+        }
+
+        function deleteProduct(index) {
+            products.splice(index, 1);
+            saveProductsToStorage();
+            renderAdminTable();
+            showToast("Article supprimé de la vitrine.");
+        }
+
+        function resetAdminForm() {
+            document.getElementById('edit-index').value = -1;
+            document.getElementById('admin-name').value = '';
+            document.getElementById('admin-price').value = '';
+            document.getElementById('admin-unit').value = '';
+            document.getElementById('admin-image').value = '';
+            document.getElementById('admin-desc').value = '';
+            document.getElementById('form-title').innerHTML = `<i class="fa-solid fa-plus-circle text-prestige-cyan"></i> Ajouter un Nouvel Article à la Vitrine`;
+        }
+
+        // Cart Drawer Functions
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if(!product) return;
+
+            const existing = cart.find(item => item.id === productId);
+            if(existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ ...product, qty: 1 });
+            }
+
+            updateCartUI();
+            showToast(`${product.name} ajouté au panier`);
+        }
+
+        function changeQty(productId, delta) {
+            const item = cart.find(i => i.id === productId);
+            if(!item) return;
+
+            item.qty += delta;
+            if(item.qty <= 0) {
+                cart = cart.filter(i => i.id !== productId);
+            }
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            const itemCount = document.getElementById('cart-item-count');
+            const container = document.getElementById('cart-items-container');
+            const subtotalEl = document.getElementById('cart-subtotal');
+            const totalEl = document.getElementById('cart-total');
+
+            const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+            badge.innerText = totalItems;
+            itemCount.innerText = totalItems;
+
+            if(cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-slate-500">
+                        <i class="fa-solid fa-basket-shopping text-4xl mb-3 text-slate-700"></i>
+                        <p class="text-sm">Votre panier est vide</p>
+                    </div>
+                `;
+                subtotalEl.innerText = "0 FCFA";
+                totalEl.innerText = "0 FCFA";
+                return;
+            }
+
+            container.innerHTML = '';
+            let subtotal = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.qty;
+                subtotal += itemTotal;
+
+                const div = document.createElement('div');
+                div.className = "py-3 flex items-center justify-between";
+                div.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-700 text-prestige-cyan flex items-center justify-center shrink-0">
+                            <i class="fa-solid ${item.image && item.image.startsWith('fa-') ? item.image : 'fa-box'}"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">${item.name}</h4>
+                            <p class="text-[10px] text-slate-400">${Number(item.price).toLocaleString()} FCFA l'unité</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center border border-slate-700 rounded-lg bg-slate-900 overflow-hidden">
+                            <button onclick="changeQty(${item.id}, -1)" class="px-2 py-1 text-slate-400 hover:text-white hover:bg-slate-800 text-xs">-</button>
+                            <span class="px-2 text-xs font-bold text-white">${item.qty}</span>
+                            <button onclick="changeQty(${item.id}, 1)" class="px-2 py-1 text-slate-400 hover:text-white hover:bg-slate-800 text-xs">+</button>
+                        </div>
+                        <span class="text-xs font-bold text-prestige-orange w-20 text-right">${itemTotal.toLocaleString()} FCFA</span>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+
+            subtotalEl.innerText = subtotal.toLocaleString() + " FCFA";
+            totalEl.innerText = subtotal.toLocaleString() + " FCFA";
+        }
+
+        // WhatsApp Checkout
+        function checkoutWhatsApp() {
+            if(cart.length === 0) {
+                showToast("Votre panier est vide.");
+                return;
+            }
+
+            const name = document.getElementById('order-name').value.trim();
+            const phone = document.getElementById('order-phone').value.trim();
+            const address = document.getElementById('order-address').value.trim();
+            const notes = document.getElementById('order-notes').value.trim();
+
+            if(!name || !phone || !address) {
+                showToast("Veuillez remplir vos coordonnées de livraison.");
+                return;
+            }
+
+            let text = `*NOUVELLE COMMANDE - SUBLIM SELECT.COM*%0A%0A`;
+            text += `*Client:* ${name}%0A`;
+            text += `*Téléphone:* ${phone}%0A`;
+            text += `*Adresse:* ${address}%0A`;
+            if(notes) text += `*Notes:* ${notes}%0A%0A`;
+            text += `*Détails des articles:*%0A`;
+
+            let total = 0;
+            cart.forEach(item => {
+                const itemTotal = item.price * item.qty;
+                total += itemTotal;
+                text += `- ${item.qty}x ${item.name} (${itemTotal.toLocaleString()} FCFA)%0A`;
+            });
+
+            text += `%0A*TOTAL ESTIMÉ: ${total.toLocaleString()} FCFA*`;
+
+            const whatsappUrl = `https://wa.me/2250700000000?text=${text}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function checkoutDirect() {
+            if(cart.length === 0) {
+                showToast("Votre panier est vide.");
+                return;
+            }
+
+            const name = document.getElementById('order-name').value.trim();
+            const phone = document.getElementById('order-phone').value.trim();
+            const address = document.getElementById('order-address').value.trim();
+
+            if(!name || !phone || !address) {
+                showToast("Veuillez remplir vos coordonnées de livraison.");
+                return;
+            }
+
+            showToast("Commande enregistrée avec succès ! Notre commercial vous contactera.");
+            cart = [];
+            updateCartUI();
+            toggleCart();
+        }
+
+        function submitInquiry() {
+            const name = document.getElementById('inquiry-name').value.trim();
+            const phone = document.getElementById('inquiry-phone').value.trim();
+            const msg = document.getElementById('inquiry-msg').value.trim();
+
+            if(!name || !phone || !msg) {
+                showToast("Veuillez remplir tous les champs du message.");
+                return;
+            }
+
+            showToast("Message envoyé avec succès ! Nous vous répondrons rapidement.");
+            document.getElementById('inquiry-name').value = '';
+            document.getElementById('inquiry-phone').value = '';
+            document.getElementById('inquiry-msg').value = '';
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.innerText = message;
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
+```
